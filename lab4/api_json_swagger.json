@@ -1,0 +1,150 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/stocks": {
+      "post": {
+        "operationId": "StocksController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateStockDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Stocks"
+        ]
+      },
+      "get": {
+        "operationId": "StocksController_findAll",
+        "parameters": [
+          {
+            "name": "title",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Stocks"
+        ]
+      }
+    },
+    "/stocks/{id}": {
+      "get": {
+        "operationId": "StocksController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Stocks"
+        ]
+      },
+      "patch": {
+        "operationId": "StocksController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateStockDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Stocks"
+        ]
+      },
+      "delete": {
+        "operationId": "StocksController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Stocks"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "Dogs stocks",
+    "description": "The dogs API description",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [
+    {
+      "name": "dogs",
+      "description": ""
+    }
+  ],
+  "servers": [],
+  "components": {
+    "schemas": {
+      "CreateStockDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "UpdateStockDto": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+}
