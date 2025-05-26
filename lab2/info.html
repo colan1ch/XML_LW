@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <style>
+        body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        background-image: url(static/day.png);
+        }
+        header {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        }
+        .my-btn {
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background: #777777;
+        color: #eeeeee;
+        font-size: 1.5rem;
+        font-family: Arial;
+        cursor: pointer;
+        user-select: none;
+        font-weight: 100;
+        justify-content: center;
+        }
+        .back-button {
+            background-color: #ffb01f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #bf7d19;
+        }
+        .back-button.about {
+            background-color: #bf7d19;
+        }
+        .dark-theme {
+      background-color: #121212;
+    }
+
+    .dark-theme .calc{
+      background-color: #0f0f0f;
+      border: 2px solid #a0a0a0;
+    }
+
+    .dark-theme.page {
+      background-image: url(static/night.png);
+    }
+
+    .dark-theme .my-btn {
+      background: #303030;
+      color: #ffffff;
+    }
+
+    .dark-theme .txt {
+        color: #ffffff;
+    }
+    </style>
+</head>
+<body class="page">
+    <header>
+        <button class="back-button" onclick="window.location.href='index.html'">⌂</button>
+        <button class="back-button about" onclick="window.location.href='info.html'">Об авторе</button>
+        <button id="nightmode_switch" class="my-btn" onclick="nightmode_switch_click()">N</button>
+    </header>
+    <div class="txt">
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+        <p>Лабораторная работа выполнена Черневым Николаем Андреевичем</p>
+        <p>Цель лабораторной работы: ознакомиться с основами HTML и CSS.</p>
+        <a href="https://github.com/colan1ch" target="_blank">Мой GitHub</a>
+    </div>
+</body>
+</html>
+<script>
+    function nightmode_switch_click() {
+    document.body.classList.toggle('dark-theme');
+    let btn = document.getElementById('nightmode_switch');
+    if (btn.textContent === 'N') {
+      btn.textContent = 'D';
+    }
+    else {
+      btn.textContent = 'N';
+    }
+  }
+</script>

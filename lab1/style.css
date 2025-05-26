@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url(static/day.png);
+  }
+  
+  header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .ft {
+    color: #000000;
+  }
+  
+  .backspace {
+    background-image: url(del.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .my-btn {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #777777;
+    color: #eeeeee;
+    font-size: 1.5rem;
+    font-family: Arial;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 100;
+    justify-content: center;
+  }
+  
+  .my-btn.primary {
+    background: #ffb01f;
+  }
+  
+  .my-btn.secondary {
+    background: #999691;
+  }
+  
+  .my-btn.execute {
+    width: 110px;
+    border-radius: 110px;
+  }
+  
+  .result {
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 270px;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-right: 10px;
+    background: #aaaaaa;
+    text-align: right;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 0;
+    font-family: Times New Roman;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .calc {
+    width: 300px;
+    background: #bbbbbb;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dark-theme {
+    background-color: #121212;
+  }
+  
+  .dark-theme .calc {
+    background-color: #0f0f0f;
+    border: 2px solid #a0a0a0;
+  }
+  
+  .dark-theme.page {
+    background-image: url(static/night.png);
+  }
+  
+  .dark-theme .my-btn {
+    background: #303030;
+    color: #ffffff;
+  }
+  
+  .dark-theme .my-btn.primary {
+    background: #ffb01f;
+    color: #ffffff;
+  }
+  
+  .dark-theme .my-btn.secondary {
+    background: #4f4d4a;
+    color: #ffffff;
+  }
+  
+  .dark-theme .result {
+    background: #444444;
+    color: #ffffff;
+  }
+  
+  .text {
+    font-family: Arial;
+    font-size: 14px;
+  }
+  
+  .dark-theme .ft {
+    color: #ffffff;
+  }
+  
+  .my-btn:active {
+    filter: brightness(130%);
+  }
+  
+  .my-btn:hover {
+    background: #3d3b38;
+  }
+  
+  .my-btn.primary:hover {
+    background: #bf7d19;
+  }
+  
+  .my-btn.secondary:hover {
+    background: #b0ada9;
+  }
+  
+  .back-button {
+    background-color: #ffb01f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .back-button:hover {
+    background-color: #bf7d19;
+  }
+  
+  .back-button.home {
+    background-color: #bf7d19;
+  }
+  
+  
